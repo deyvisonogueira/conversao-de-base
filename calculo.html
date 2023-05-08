@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="" />
+    <link rel="stylesheet" href="assets/css/calculo.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Iniciar</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="equipe.html">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="calculo.html">Calculo</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main container">
+        <h1 class="title text-center">Bases Binárias</h1>
+        <label for="decimal">Digite um valor decimal:</label>
+        <input type="text" id="decimal" name="decimal"><br><br>
+        <button
+            onclick="document.getElementById('binario').textContent = decimalParaBinario(document.getElementById('decimal').value)">Converter
+            para binário</button>
+        <p>O valor em binário é: <span id="binario"></span></p><br><br>
+
+        <label for="binario2">Digite um valor binário:</label>
+        <input type="text" id="binario2" name="binario"><br><br>
+        <button
+            onclick="document.getElementById('decimal2').textContent = binarioParaDecimal(document.getElementById('binario2').value)">Converter
+            para decimal</button>
+        <p>O valor em decimal é: <span id="decimal2"></span></p><br><br>
+
+        <label for="decimal3">Digite um valor decimal:</label>
+        <input type="text" id="decimal3" name="decimal3"><br><br>
+        <button
+            onclick="document.getElementById('hexadecimal').textContent = decimalParaHexadecimal(document.getElementById('decimal3').value)">Converter
+            para hexadecimal</button>
+        <p>O valor em hexadecimal é: <span id="hexadecimal"></span></p><br><br>
+
+        <label for="hexadecimal2">Digite um valor hexadecimal:</label>
+        <input type="text" id="hexadecimal2" name="hexadecimal2"><br><br>
+        <button
+            onclick="document.getElementById('decimal4').textContent = hexadecimalParaDecimal(document.getElementById('hexadecimal2').value)">Converter
+            para decimal</button>
+        <p>O valor em decimal é: <span id="decimal4"></span></p><br><br>
+
+        <label for="binario3">Digite um valor binario:</label>
+        <input type="text" id="binario3" name="binario3"><br><br>
+        <button
+            onclick="document.getElementById('hexadecimal3').textContent = binarioParaHexadecimal(document.getElementById('binario3').value)">Converter
+            para hexadecimal</button>
+        <p>O valor em hexadecimal é: <span id="hexadecimal3"></span></p><br><br>
+
+        <label for="hexadecimal4">Digite um valor hexadecimal</label>
+        <input type="text" id="hexadecimal4" name="hexadecimal4"><br><br>
+        <button
+            onclick="document.getElementById('binario4').textContent = hexadecimalParaBinario(document.getElementById('hexadecimal4').value)">Converter
+            para binario</button>
+        <p>O valor em binario é: <span id="binario4"></span></p><br><br>
+    </main>
+    <footer class="footer ">
+        <div class="container">
+            <p class="text-center">&copy; Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
